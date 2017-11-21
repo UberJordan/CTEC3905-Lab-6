@@ -7,11 +7,16 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Google Maps API</h1>
+  <h1>Flickr API</h1>
 
-  <div id="map"></div>
+  <form id="searchForm">
+    <label for="flickrQuery">Search Flickr for: </label>
+    <input id="flickrQuery" type="text" placeholder="kittens">
+    <input type="submit">
+  </form>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY-HERE&callback=initMap"></script>
+  <section id="demo"></section>
+
   <script src="javascript/scripts.js"></script>
 </body>
 </html>
