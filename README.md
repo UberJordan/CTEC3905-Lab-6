@@ -5,6 +5,8 @@ Get an API key from Flickr at the documentation link below.
 [Documentation](https://www.flickr.com/services/api/)  
 [Photo Source URLs](https://www.flickr.com/services/api/misc.urls.html)
 
+Thos example code uses JavaScript "fetch", which is slightly different to the Ajax requests we have made in the other examples. Read more on [JS Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
+
 
 ## Images size suffixes
 
