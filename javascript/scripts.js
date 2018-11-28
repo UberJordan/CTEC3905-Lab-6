@@ -1,13 +1,13 @@
 "use strict";
 
 (function(){
-  
+
   let queryBox = document.getElementById("guardQuery");
   let searchForm = document.getElementById("searchForm");
   let demoJSON = document.getElementById("demo");
 
   // get an api key from http://open-platform.theguardian.com/access/
-  let baseURL = "https://content.guardianapis.com/search?api-key=YOUR-API-KEY-HERE&q=";
+  let baseURL = "https://content.guardianapis.com/search?api-key=e06ba114-0985-4963-ae29-de7aeb00a833&q=";
 
   searchForm.addEventListener("submit", function(ev){
     let url = baseURL + queryBox.value;

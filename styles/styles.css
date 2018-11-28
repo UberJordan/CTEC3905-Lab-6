@@ -1,0 +1,15 @@
+body {
+  background-image: linear-gradient(#e66465, #9198e5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+input[type=text] {
+  border: 2px solid #ccc;
+  outline: none;
+  transition: 0.5s;
+}
+
+input[type=text]:focus {
+  border: 2px solid #555;
+}
