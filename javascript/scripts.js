@@ -8,7 +8,7 @@
 
   let baseURL = "https://api.flickr.com/services/rest/? \
                 method=flickr.photos.search& \
-                api_key=YOUR-API-KEY-HERE& \
+                api_key=bcc5f33987cca965aaa4b37fc1a99ab3& \
                 format=json& \
                 per_page=20& \
                 nojsoncallback=1& \
@@ -19,13 +19,13 @@
     let request = new Request(url);
     fetch(request)
       .then(function (response) {
-        // console.log(`res: ${response.status}`);
+        console.log(`res: ${response.status}`);
         return response.json();
       })
       .then(function(data) {
         let theData = "";
         let tmp = data.photos.photo;
-        // console.log(data);
+        console.log(data);
         for(let key in tmp) {
           let url = `https://farm${tmp[key].farm}.staticflickr.com/${tmp[key].server}/${tmp[key].id}_${tmp[key].secret}_q.jpg`;
           theData += `<img src="${url}" alt="${tmp[key].title}">`;
