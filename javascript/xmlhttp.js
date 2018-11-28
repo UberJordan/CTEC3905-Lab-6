@@ -38,7 +38,7 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
 */
 
   function gatherData(data) {
-    // console.log(data);
+    console.log(data);
     // initialise some variables
     let theData = "";
     let langLinks = "";
